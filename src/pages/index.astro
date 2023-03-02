@@ -2,7 +2,7 @@
 import Card from "../components/Card.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/style.css";
-import Button from "../components/Button.astro";
+import Headertop from "../components/Headertop.astro";
 ---
 
 <html lang="en">
@@ -15,11 +15,12 @@ import Button from "../components/Button.astro";
   </head>
   <body>
     <Navigation />
-    <h1>Astro</h1>
     <main>
-      <Button variant="primary" size="small">TEXT</Button>
+      <Headertop />
+      <Card titel="Peaceful Piano" text="Relax and indulge with beautiful piano pieces" />
+      <!-- <Button variant="primary" size="small">TEXT</Button>
       <Button variant="secondary" size="medium">TEXT</Button>
-      <Button variant="secondary" size="large">TEXT</Button>
+      <Button variant="secondary" size="large">TEXT</Button> -->
       <!-- <Card header="Hej Verden" /> -->
     </main>
   </body>

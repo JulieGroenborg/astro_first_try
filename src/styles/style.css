@@ -1,3 +1,9 @@
 body {
-  background-color: hotpink;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 15;
 }
