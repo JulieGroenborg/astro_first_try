@@ -1,13 +1,23 @@
 ---
 ---
 
-<article><div class="div_1"><p class="left_arrow">&#8249</p><p>&#8250</p></div><div class="div_2"><button>Tilmeld dig</button><button>Log på</button></div></article>
+<article>
+  <div class="div_1">
+    <p class="left_arrow">&#8249</p>
+    <p>&#8250</p>
+  </div>
+  <div class="div_2">
+    <button>Tilmeld dig</button>
+    <button>Log på</button>
+  </div>
+</article>
 
 <style>
   article {
     flex-direction: column;
     background-color: rgb(22, 22, 22);
     width: 100%;
+    position: fixed;
   }
 
   .left_arrow {
@@ -22,7 +32,7 @@
   }
   button {
     border-radius: 25px;
-    padding: 1.2% 2.5% 1.2% 2.5%;
+    padding: 1% 2.2% 1% 2.2%;
     font-weight: 600;
     font-size: 90%;
     border: none;
@@ -38,10 +48,15 @@
 
   .div_2 {
     position: relative;
-    left: 68%;
+    left: 57%;
   }
   button:first-child {
     background-color: rgb(22, 22, 22);
     color: rgb(208, 208, 208);
+    margin-right: 0;
+  }
+
+  button:last-child {
+    margin-left: 0;
   }
 </style>

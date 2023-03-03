@@ -1,26 +1,19 @@
 ---
-const { variant, size } = Astro.props;
 ---
 
-<button class={variant + " " + size}><slot /></button>
+<button>Tilmeld dig gratis</button>
 
 <style>
   button {
-    padding: 1rem;
-  }
-  .primary {
-    background-color: royalblue;
-  }
-  .secondary {
-    background-color: orange;
-  }
-  .small {
-    font-size: 1rem;
-  }
-  .medium {
-    font-size: 2rem;
-  }
-  .large {
-    font-size: 3rem;
+    border-radius: 25px;
+    padding: 1% 2.2% 1% 2.2%;
+    font-weight: 600;
+    font-size: 90%;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    color: rgb(22, 22, 22);
+    position: relative;
+    left: 72%;
+    top: 18%;
   }
 </style>

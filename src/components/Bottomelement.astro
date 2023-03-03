@@ -1,0 +1,19 @@
+---
+const {} = Astro.props;
+import Button from "./Button.astro";
+---
+
+<article><p>Dette er footer. Hvor er du?!</p><Button /></article>
+
+<style>
+  article {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to right, #da41be, #cd39cc, #bb36dc, #a139ec, #7a3ffd);
+  }
+
+  p {
+    display: inline;
+  }
+</style>

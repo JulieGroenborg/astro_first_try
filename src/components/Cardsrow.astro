@@ -1,9 +1,10 @@
 ---
 import Card from "../components/Card.astro";
+const { overskrift } = Astro.props;
 ---
 
 <div>
-  <h1>Fokus</h1>
+  <h1>{overskrift}</h1>
   <article>
     <Card titel="Peaceful Piano" text="Relax and indulge with beautiful piano pieces" />
     <Card titel="Peaceful Piano" text="Relax and indulge with beautiful piano pieces" />
@@ -27,6 +28,6 @@ import Card from "../components/Card.astro";
   h1 {
     color: azure;
     margin-left: 3%;
-    margin-top: 3%;
+    margin-top: 5%;
   }
 </style>
