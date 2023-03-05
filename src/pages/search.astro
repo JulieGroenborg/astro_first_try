@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SearchCard from "../components/SearchCard.astro";
+---
+
+<MainLayout>
+  <main>
+    <SearchCard titel="Podcasts" />
+    <SearchCard titel="Specielt til dig" />
+    <SearchCard titel="Hitlister" />
+    <SearchCard titel="Nye udgivelser" />
+    <SearchCard titel="Opdag" />
+    <SearchCard titel="Livsbegivenheder" />
+    <SearchCard titel="EQUAL" />
+    <SearchCard titel="Pop" />
+    <SearchCard titel="Party" />
+    <SearchCard titel="Hiphop" />
+  </main>
+</MainLayout>
+
+<style>
+  main {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>

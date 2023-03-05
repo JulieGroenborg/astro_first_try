@@ -1,0 +1,32 @@
+---
+import New from "./New.astro";
+const titel = Astro.props.titel;
+---
+
+<article class="backgroundC"><New hasNew={true} /> <h2>{titel}</h2></article>
+
+<style>
+  article {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 2%;
+    background-color: rgb(40, 163, 122);
+    width: 14.5%;
+    height: 60%;
+    border-radius: 5px;
+  }
+  h2 {
+    padding: 3% 10% 0 10%;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+
+<script>
+  const setBg = () => {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.querySelector(".backgroundC").style.backgroundColor = "#" + randomColor;
+  };
+
+  window.addEventListener("load", setBg);
+</script>

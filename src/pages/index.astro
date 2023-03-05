@@ -1,27 +1,12 @@
 ---
-import "../styles/style.css";
-import Headertop from "../components/Headertop.astro";
-import Navleft from "../components/Navleft.astro";
 import Cardsrow from "../components/Cardsrow.astro";
-import Bottomelement from "../components/Bottomelement.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Navleft />
-    <main>
-      <Headertop /><div class="first_div">
-        <Cardsrow overskrift="Fokus" />
-      </div><Cardsrow overskrift="Spotify Playlists" />
-    </main>
-    <footer><Bottomelement /></footer>
-    <script src="../js/index.js"></script>
-  </body>
-</html>
+<MainLayout>
+  <main>
+    <div class="first_div">
+      <Cardsrow overskrift="Fokus" />
+    </div><Cardsrow overskrift="Spotify Playlists" />
+  </main>
+</MainLayout>

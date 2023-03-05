@@ -1,0 +1,22 @@
+---
+const { hasNew } = Astro.props;
+---
+
+<article>{hasNew && <p>NEW</p>}</article>
+
+<style>
+  article {
+    z-index: 3;
+    border: 2px solid black;
+    position: absolute;
+    top: -7%;
+    right: 0;
+    background-color: aqua;
+    border-radius: 15px;
+    width: 28%;
+    text-align: center;
+  }
+  p {
+    margin: 5%;
+  }
+</style>
